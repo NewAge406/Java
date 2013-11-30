@@ -1,0 +1,23 @@
+CSCI 232
+Tobias Kundig
+November 4, 2012
+
+1.) For this problem I needed to place the code letters into a structure that allowed me to recall them in a specific order using the same “code” that was used to place them.  Because the direction of the placement only contained two possible paths (left or right) a Binary Tree seemed most efficient. I initially thought the parents would hold the individual numbers from the code and the leaves would hold the letters. Instead my insertion method walked through the three numbers of the code and placed its corresponding letter into the end of the traversal. The get method similarly walked the tree according to the given code but the recursive call in this case messed me up. For some reason each time the recursion walked back it would return an empty string. So the first return was good, but the following two were not, causing the whole thing to fall apart. This took a long time and I had help from a grad student who had had a similar problem.
+
+2.) I applied no concepts from the book. This was the first assignment that I didn’t even open the book for and ultimately it was the hardest.  I had to come up with several “clever” methods. In fact every method in my Binary Tree class is amazing. I did use the code you provided to break the file up and several concepts from class.  Implementing those concepts individually though is challenging. Since the insertion and retrieval was not standard I was forced to think outside the box on how to place the letters and then get them. I would have liked to implement more from the assignment and I can see the exact changes and where they need to go. I felt a lot came together for me in the assignment and I hope it shows in the code.  This is the best, most complex code I have ever turned in (which isn’t saying much).
+
+3.) I know there is an easier way to do what I did. Its upsetting when people are able to complete this in a couple hours when it took me a considerable amount of time. I still don’t know what the beginning of the code you provided us does . I left it commented in, and would like to talk about it. I think you touched on it briefly. I was still able to get an error message that prints appropriately but then the program errors. I believe I can put a break in there, but I have never used that before and need to research it. Besides that there is no superfluous code or comments that don’t make sense. The commenting and structure of this code is stunning. The sad part is I helped others so there may be some similar code out there. But once you know one I’m sure its easy to see the others.
+
+I do make an assumption about the input, it must contain a letter followed by a space and three numbers. I do display the “Your code isn’t properly formatted” but then it breaks. I have never used the break command and it looks illegal!! 
+
+4.) It seemed so easy with those brush strokes you scrawl at us every other day. Actually implementing them is a different story. Issues came down to specific code issues. The regex I use took considerable research and I think I got lucky to be honest. I needed to split up the string into 3 bite size bits but substring wasn’t working right. So using a regex tester and wikipedia <I know right>, I was able to crack it. I would like to see an alternative solution to this.
+
+The other sticking point was the recursive call in the getCode method. It kept returning 3 times, which makes sense because thats how many calls there are. So after a lot of heartache and a grad students help a simple return in front of my recursive calls solved it. It was good the solution was so easy and the other logic was sound.
+
+5.) I included only one file. I delete one of the numbers of the binary code to get the error message.
+
+6.) I did not work in a team, other than a couple hours with a grad student. That time with the grad student brought a year of computer science to a head and things came together. I feel my logic is more sound and I am comfortable talking about concepts and ideas. I need to code with people more and less by myself. 
+
+I am going to leave the write-up as is and add an addendum here. I had to modify the insert, getCode and decodeMessage methods in the BSTNode Class. I beefed up the base cases and allowed for two base cases, and moved them out of the if else. I also took out the awesome regex from the decodeMessage and just passed in the entire string. This was to comply with the ACTUAL assignment that required a more efficient encoding and decoding.
+
+The fixes took about an hour and was very happy I could do it by myself! I also wanted to try my own message and it worked first time!
