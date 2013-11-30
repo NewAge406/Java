@@ -1,0 +1,13 @@
+<body>
+<center>
+<h1> The Little Boat </h1>
+</center>
+<p> The storm tossed the little boat like a cheap sneaker in an old washing
+machine.  The three drunken fishermen were used to such treatment, of course, 
+but not the three slaesman, who even as a stowaway now felt that he had overpaid
+for the voyage. </p>
+<o1>
+<1i> Will the salesman die? </1i>
+<1i> What color is the boat? </1i>
+</o1>
+</body>
