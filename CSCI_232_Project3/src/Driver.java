@@ -6,15 +6,15 @@ import java.util.Scanner;
 public class Driver {
 
     public static void main(String args[]) throws FileNotFoundException {
-        //if (args.length != 1) {
-        //    System.out.println("Usage: Decoder <filename>");
-        //    System.exit(1);
-        //}
+	if (args.length != 1) {
+            System.out.println("Usage: Decoder <filename>");
+            System.exit(1);
+        }
 
     	// Creates an instance of my Tree class
     	BasicBinaryTree myTree = new BasicBinaryTree();
     	
-        Scanner s = new Scanner(new File("./src/Code3.txt"));
+        Scanner s = new Scanner(new File("/home/toby/scratch/Java/Java/CSCI_232_Project3/src/Code3.txt"));
 
         // While loop that breaks up a file. I wasn't 100% sure how
         // to utilize your code, but this part I know!
